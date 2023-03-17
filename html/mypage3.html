@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+    <title>nav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap" rel="stylesheet">
+
+</head>
+
+<header>
+    <div class="left">
+        <a href="index.html">
+            <div class="logo"><img src="../image/책장옆.png" alt="logo"></div>
+        </a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="찾고 싶은 책을 검색해 보세요!">
+        <button class="search_img"><img src="../image/search.png"></button>
+    </div>
+    <div class="right">
+        <nav>
+            <ul>
+                <li><a href="./garage.html">책 창고</a></li>
+                <li><a href="./login.html">로그인</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <div id="wrap">
+        <section>
+            <div class="test">
+                <div class="mypage-head">
+                    <h1 class="tit">
+                        <a href="#">내정보</a>
+                    </h1>
+                    <div class="grd-box">
+                        <p class="txt">
+                            <a class="highlight">홍길동</a>님, 반갑습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mypage-contents">
+                    <div class="contents-left">
+                        <div class="mypage-side">
+                            <ul>
+                                <li>
+                                    <h2>내창고</h2>
+                                    <ul>
+                                        <li class="submenu">
+                                            <a href="#">주문/배송 조회</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">환불 내역</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">장바구니</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">찜목록</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>내활동</h2>
+                                    <ul>
+                                        <li class="submenu">
+                                            <a href="#">1:1문의 내역</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">리뷰</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>내정보</h2>
+                                    <ul>
+                                        <li class="submenu">
+                                            <a href="#">회원 정보 수정</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">배송지</a>
+                                        </li>
+                                        <li class="submenu">
+                                            <a href="#">회원탈퇴</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mypage3-block">
+                        <div class="title-area2">
+                            <h2 class="tit">
+                                환불 내역
+                                <em>(최근 1개월)</em>
+                            </h2>
+                            <a class="btnMore" href="#">더보기</a>
+                        </div>
+                        <div class="search-period">
+                            <div class="search-period-container">
+                                <div class="select_con">
+                                    <div class="select_con-left">
+                                        <p>구매기간</p>
+                                        <ul class="select-month">
+                                            <li class="on">
+                                                <button type="button" data-month="-1">1개월</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" data-month="-3">3개월</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" data-month="-6">6개월</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" data-month="-12">12개월</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="select_con-right">
+                                        <div class="select-range">
+                                            <select id="cal-start-year" title="년도를 선택하세요" style="width:76px;">
+                                                <option value="2012">2012</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023" selected="selected">2023</option>
+                                            </select>
+                                            <label for="cal-start-year">년</label>
+                                            <select id="cal-start-month" title="달월을 선택하세요" style="width:60px;">
+                                                <option value="01">1</option>
+                                                <option value="02" selected="selected">2</option>
+                                                <option value="03">3</option>
+                                                <option value="04">4</option>
+                                                <option value="05">5</option>
+                                                <option value="06">6</option>
+                                                <option value="07">7</option>
+                                                <option value="08">8</option>
+                                                <option value="09">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <label for="cal-start-month">월</label>
+                                            <select id="cal-start-day" title="날일을 선택하세요" style="width:60px;">
+                                                <option value="01">1</option>
+                                                <option value="02">2</option>
+                                                <option value="03">3</option>
+                                                <option value="04">4</option>
+                                                <option value="05">5</option>
+                                                <option value="06">6</option>
+                                                <option value="07">7</option>
+                                                <option value="08">8</option>
+                                                <option value="09">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16" selected="selected">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                            </select>
+                                            <label for="cal-start-day">일</label>
+                                            <span class="des">~</span>
+                                            <select id="cal-end-year" title="년도를 선택하세요" style="width:76px;">
+                                                <option value="2012">2012</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023" selected="selected">2023</option>
+                                            </select>
+                                            <label for="cal-end-year">년</label>
+                                            <select id="cal-end-month" title="달월을 선택하세요" style="width:60px;">
+                                                <option value="01">1</option>
+                                                <option value="02" selected="selected">2</option>
+                                                <option value="03">3</option>
+                                                <option value="04">4</option>
+                                                <option value="05">5</option>
+                                                <option value="06">6</option>
+                                                <option value="07">7</option>
+                                                <option value="08">8</option>
+                                                <option value="09">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <label for="cal-end-month">월</label>
+                                            <select id="cal-end-day" title="날일을 선택하세요" style="width:60px;">
+                                                <option value="01">1</option>
+                                                <option value="02">2</option>
+                                                <option value="03">3</option>
+                                                <option value="04">4</option>
+                                                <option value="05">5</option>
+                                                <option value="06">6</option>
+                                                <option value="07">7</option>
+                                                <option value="08">8</option>
+                                                <option value="09">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16" selected="selected">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                            </select>
+                                            <label for="cal-end-day">일</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-right">
+                                    <button type="button" class="btnLookup" id="do-search-period">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="board-guide-test">
+                            <span class="txt">*2023년 1월 1일 이후 내역만 조회가 가능합니다.</span>
+                        </p>
+                        <table class="board-list-s">
+                            <colgroup>
+                                <col style="width:17%;">
+                                <col style="width:50%;">
+                                <col style="width:8%;">
+                                <col style="width:130px;">
+                                <col style="width:110px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">주문일자</th>
+                                    <th scope="col">상품</th>
+                                    <th scope="col">수량</th>
+                                    <th scope="col">주문금액</th>
+                                    <th scope="col">상태</th>
+                                </tr>
+                            </thead>
+                            <tbody class="history">
+                                <tr>
+                                    <td colspan="5" class="nodata">기간 내 주문내역이 없습니다</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="largeFooter">
+            <div class="footer-notice">
+                <div>
+                    <span>공지사항</span>
+                    <span>|</span>
+                    <span>새로운 소식이 없어요.</span>
+                    <a href="./notice.html">
+                        <img src="../image/right.png" alt="더보기">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-service">
+                <div>
+                    <span><a href="./service.html">고객센터</a></span>
+                    <span>|</span>
+                    <span>운영시간 [평일 09:00 - 18:00] 주말 및 공휴일은 1:1 문의를 이용해 주세요.</span>
+                    <button type="button" onclick="location.href='./one.html'">1:1 문의하기</button>
+                    <button type="button" onclick="location.href='./service.html'">FAQ</button>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div>
+                    <div class="footer-logo">
+                        <img src="../image/책장옆.png">
+                    </div>
+                    <div class="footer-sns">
+                        <div class="footer-sns1"><img src="../image/twitter.png"></div>
+                        <div class="footer-sns2"><img src="../image/instagram.png"></div>
+                        <div class="footer-sns3"><img src="../image/youtube.png"></div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="footer-inform">
+                <p>
+                <details open>
+                    <summary>사업자 정보 펼쳐보기</summary>
+                    <p>서울 종로구 인사동길 12 대일빌딩 | 대표자 : 우별림 | 사업자등록번호 : 220-86-58115 | 기관명칭 : 책장옆 | 통신판매업신고 :
+                        제2018-서울종로-0495호 | 기관등록번호 : 제2304호
+                    </p>
+                </details>
+                </p>
+                <div class="footer-copyright2">
+                    <p>Copyright © 2023 책장옆 All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
